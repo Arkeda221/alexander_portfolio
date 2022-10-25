@@ -1,0 +1,67 @@
+{
+  "basic_info": {
+    "name": "Alexander Ab",
+    "titles": ["Full Stack Engineer"],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/Arkeda221",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedIn",
+        "url": "https://www.linkedin.com/in/alexanderab1/",
+        "class": "fab fa-linkedin-in"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original"
+      },
+      {
+        "name": "Vue",
+        "class": "devicon-vuejs-plain"
+      },
+      {
+        "name": "Python",
+        "class": "devicon-python-plain"
+      },
+      {
+        "name": "Express",
+        "class": "devicon-express-original"
+      },
+      {
+        "name": "Node",
+        "class": "devicon-nodejs-plain"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain"
+      },
+      {
+        "name": "MongoDB",
+        "class": "devicon-mongodb-plain"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain"
+      }
+    ]
+  }
+}
