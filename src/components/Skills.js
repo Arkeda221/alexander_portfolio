@@ -1,18 +1,18 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 class Skills extends Component {
   render() {
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.skills;
+      var sectionName = this.props.resumeBasicInfo.section_name.skills
       var skills = this.props.sharedSkills.icons.map(function (skills, i) {
         return (
           <li className="list-inline-item mx-3" key={i}>
             <span>
               <div className="text-center skills-tile">
-                <i className={skills.class} style={{ fontSize: "220%" }}>
+                <i className={skills.class} style={{ fontSize: '220%' }}>
                   <p
                     className="text-center"
-                    style={{ fontSize: "30%", marginTop: "4px" }}
+                    style={{ fontSize: '30%', marginTop: '4px' }}
                   >
                     {skills.name}
                   </p>
@@ -20,8 +20,8 @@ class Skills extends Component {
               </div>
             </span>
           </li>
-        );
-      });
+        )
+      })
     }
 
     return (
@@ -37,8 +37,8 @@ class Skills extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Skills;
+export default Skills

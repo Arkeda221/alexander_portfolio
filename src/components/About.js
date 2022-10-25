@@ -1,36 +1,32 @@
-import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import React, { Component } from 'react'
 
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      var profilepic = 'images/' + this.props.sharedBasicInfo.image
     }
     if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+      var sectionName = this.props.resumeBasicInfo.section_name.about
+      var hello = this.props.resumeBasicInfo.description_header
+      var about = this.props.resumeBasicInfo.description
     }
 
     return (
       <section id="about">
         <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
+          <h1 style={{ color: 'black' }}>
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
-                <span style={{ cursor: "auto" }}>
+                <span style={{ cursor: 'auto' }}>
                   <img
                     height="250px"
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
-                  <Icon
+                  {/* <Icon
                     icon={angularIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
@@ -41,7 +37,7 @@ class About extends Component {
                   <Icon
                     icon={vueIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
+                  /> */}
                 </span>
               </div>
             </div>
@@ -54,14 +50,14 @@ class About extends Component {
                       className="iconify"
                       data-icon="emojione:red-circle"
                       data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
+                    ></span>{' '}
+                    &nbsp;{' '}
                     <span
                       className="iconify"
                       data-icon="twemoji:yellow-circle"
                       data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
+                    ></span>{' '}
+                    &nbsp;{' '}
                     <span
                       className="iconify"
                       data-icon="twemoji:green-circle"
@@ -71,13 +67,13 @@ class About extends Component {
                   <div
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
-                      height: "auto",
-                      fontSize: "132%",
-                      lineHeight: "200%",
+                      height: 'auto',
+                      fontSize: '132%',
+                      lineHeight: '200%'
                     }}
                   >
                     <br />
-                    <span className="wave">{hello} :) </span>
+                    <span className="wave">{hello} </span>
                     <br />
                     <br />
                     {about}
@@ -85,11 +81,34 @@ class About extends Component {
                 </div>
               </div>
             </div>
+            <div className="resume">
+              <button
+                className="resume-button"
+                style={{
+                  borderRadius: '5px',
+                  marginTop: '15px',
+                  background: 'white'
+                }}
+              >
+                <a
+                  className="button"
+                  href="../resume/Alexander-Ab-Resume.pdf"
+                  download="Alexander-Ab-Resume.pdf"
+                  style={{
+                    color: 'black',
+                    fontSize: '200%',
+                    fontFamily: 'sans-serif'
+                  }}
+                >
+                  RESUME
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default About;
+export default About
