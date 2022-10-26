@@ -92,8 +92,8 @@ class About extends Component {
               >
                 <a
                   className="button"
-                  href="../resume/Alexander-Ab-Resume.pdf"
-                  download="Alexander-Ab-Resume.pdf"
+                  href="https://pdfhost.io/v/bVO2wDwkd_Alexander_Ab_Resume_docx"
+                  target="_blank"
                   style={{
                     color: 'black',
                     fontSize: '200%',
