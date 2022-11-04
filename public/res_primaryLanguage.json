@@ -102,6 +102,23 @@
           "name": "Sequelize"
         }
       ]
+    },
+    {
+      "title": "Rock-Paper-Scissors",
+      "startDate": "2022",
+      "description": "A simple rock, paper, scissors game where the player battles the computer, built using VueJs.",
+      "images": ["images/portfolio/RPS/p1.jpg", "images/portfolio/RPS/p2.jpg"],
+      "url": "https://arkedas_rock_paper_scissor.surge.sh/",
+      "technologies": [
+        {
+          "class": "devicon-vuejs-plain",
+          "name": "Vue"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS"
+        }
+      ]
     }
   ],
   "experience": [

@@ -23,7 +23,7 @@ class Projects extends Component {
           <div
             className="col-sm-12 col-md-6 col-lg-4"
             key={projects.title}
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: 'pointer', textAlign: 'center' }}
           >
             <span className="portfolio-item d-block">
               <div className="foto" onClick={() => detailsModalShow(projects)}>
